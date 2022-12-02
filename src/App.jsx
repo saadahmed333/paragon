@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import {Home} from "./container/index"
 import 'flowbite';
-
+import {About} from "./container/about"
 function App() {
   return (
     <>
       <div>
-     <Home />
+        <About />
       </div>
     </>
   );

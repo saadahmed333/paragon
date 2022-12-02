@@ -1,0 +1,10 @@
+
+.About-Background {
+    background-image: url('https://media.istockphoto.com/id/880002532/photo/sewing-machine-and-turquoise-fabric.jpg?b=1&s=612x612&w=0&k=20&c=2FkzSn-I9tEjKIPkrIzgRvf2PKTF1TT-uqbCYbjCpVY=');
+    height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-position-x: center;
+  background-position-y: center;
+}
