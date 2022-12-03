@@ -1,4 +1,6 @@
 import "../css/about.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import stiches from "../assets/svg/stiches.png";
 import personal from "../assets/svg/personal.png";
 import custom from "../assets/svg/custom.png";
@@ -7,7 +9,16 @@ import tailor2 from "../assets/svg/tailor2.png";
 import laptop from "../assets/svg/laptop.png";
 import clothShop from "../assets/svg/clothshop.png";
 
-function About() {
+import Slider from "react-slick";
+function About() {  
+  var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
+
   return (
     <div>
       <div className="w-[100%] bg-[#2B77C5] px-[10px] py-[20px] text-[white]">
@@ -107,21 +118,21 @@ function About() {
       {/* About Laptop 3rd part */}
 
       <div>
-        <section class="text-gray-600 body-font overflow-hidden ">
-          <div class="container px-5 pb-[20px] mx-auto mt-[0px] sm:mt-[100px]">
-            <div class="flex items-center flex-wrap  mb-[0px]">
-              <div class="p sm:p-12 pt-[0px] md:w-1/2 flex flex-col items-start">
-                <h2 class="sm:text-[20px] text-[18px] font-bold text-black mt-4 mb-4">
+        <section className="text-gray-600 body-font overflow-hidden ">
+          <div className="container px-5 pb-[20px] mx-auto mt-[0px] sm:mt-[100px]">
+            <div className="flex items-center flex-wrap  mb-[0px]">
+              <div className="p sm:p-12 pt-[0px] md:w-1/2 flex flex-col items-start">
+                <h2 className="sm:text-[20px] text-[18px] font-bold text-black mt-4 mb-4">
                   WELCOME TO <span className="text-[#2B77C5]">PARAGON</span>
                 </h2>
-                <p class="leading-relaxed  text-[12px] ">
+                <p className="leading-relaxed  text-[12px] ">
                   We have dealt with various kinds of garments, be it school,
                   office or hotel uniforms, labor & security, fashion & casual
                   wear, or any other kind of fabrics. Moreover, we offer
                   embroidery and printing on all of our products.{" "}
                 </p>
               </div>
-              <div class=" xl:mt-[50px] md:w-1/2 flex flex-col items-start">
+              <div className=" xl:mt-[50px] md:w-1/2 flex flex-col items-start">
                 <img src={laptop} alt="" className="mt-[10px]" />
               </div>
             </div>
@@ -131,62 +142,88 @@ function About() {
 
       {/* About 4th Part Slider  */}
 
+    <div className="bg-yellow-100 mx-[20px] my-[100px]"> 
+    <Slider {...settings}>
       <div>
-      <button
-            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+        <h3>1</h3>
+      </div>
+      <div>
+        <h3>2</h3>
+      </div>
+      <div>
+        <h3>3</h3>
+      </div>
+      <div>
+        <h3>4</h3>
+      </div>
+      <div>
+        <h3>5</h3>
+      </div>
+      <div>
+        <h3>6</h3>
+      </div>
+    </Slider>
+    </div>
+
+
+      {/* <div className="relative">
+     <div>
+     <button
+            className="bg-black carousel-control-prev  flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
             type="button"
             data-bs-target="#carouselExampleControls"
             data-bs-slide="prev"
           >
             <span
-              class="carousel-control-prev-icon inline-block bg-no-repeat"
+              className="carousel-control-prev-icon inline-block bg-no-repeat"
               aria-hidden="true"
             ></span>
-            <span class="visually-hidden">Previous</span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            className="bg-black carousel-control-next  flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
             type="button"
             data-bs-target="#carouselExampleControls"
             data-bs-slide="next"
           >
             <span
-              class="carousel-control-next-icon inline-block bg-no-repeat"
+              className="carousel-control-next-icon inline-block bg-no-repeat"
               aria-hidden="true"
             ></span>
-            <span class="visually-hidden">Next</span>
+            <span className="visually-hidden">Next</span>
           </button>
+     </div>
         <div
           id="carouselExampleControls"
-          class="carousel slide relative"
+          className="carousel slide relative"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner relative w-full overflow-hidden">
-            <div class="carousel-item active relative float-left w-full">
+          <div className="carousel-inner relative w-full overflow-hidden">
+            <div className="carousel-item active relative float-left w-full">
               <img
                 src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-                class="block w-full"
+                className="block w-full"
                 alt="Wild Landscape"
               />
             </div>
-            <div class="carousel-item relative float-left w-full">
+            <div className="carousel-item relative float-left w-full">
               <img
                 src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-                class="block w-full"
+                className="block w-full"
                 alt="Camera"
               />
             </div>
-            <div class="carousel-item relative float-left w-full">
+            <div className="carousel-item relative float-left w-full">
               <img
                 src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-                class="block w-full"
+                className="block w-full"
                 alt="Exotic Fruits"
               />
             </div>
           </div>
          
         </div>
-      </div>
+      </div> */}
 
       {/* aboute 6th part  */}
 
