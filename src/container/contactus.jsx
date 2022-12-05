@@ -16,10 +16,10 @@ const ContactUs = () => {
       </div>
 
       <div>
-      <section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">OUR <span className="text-[#2B77C5]">ADDRESS</span>
+      <section className="text-gray-600 body-font">
+  <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">OUR <span className="text-[#2B77C5]">ADDRESS</span>
       </h1>
       <div className="mb-[10px]">
         <h1 className="pb-[2px] font-semibold">UAE ADDRESS</h1>
@@ -39,7 +39,7 @@ const ContactUs = () => {
      <div className="flex flex-col justify-between h-[300px] mt-[10px]">
      <input type="text" placeholder="YOUR NAME" className="h-[30px] text-[15px]" />
       <input type="email" placeholder="YOUR EMAIL" className="h-[30px] text-[15px]" />
-      <textarea name="" id="" cols="10" rows="8">YOUR MESSEGE</textarea>
+      <textarea name="YOUR MESSEGE" id="" cols="10" rows="8"></textarea>
      </div>
      <div className="mt-[10px] w-[100%]">
         <button className="border px-[10px] py-[5px] text-white bg-[#2B77C5]">CONTACT US</button>
@@ -49,7 +49,10 @@ const ContactUs = () => {
 </section>
       </div>
 
-
+    <div className="px-[100px]">
+    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">OUR <span className="text-[#2B77C5]">ADDRESS</span>
+      </h1>
+    </div>
 
     </div>
   );
