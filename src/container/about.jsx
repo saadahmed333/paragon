@@ -1,6 +1,4 @@
 import "../css/about.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import stiches from "../assets/svg/stiches.png";
 import personal from "../assets/svg/personal.png";
 import custom from "../assets/svg/custom.png";
@@ -8,17 +6,10 @@ import tailor1 from "../assets/svg/tailor1.png";
 import tailor2 from "../assets/svg/tailor2.png";
 import laptop from "../assets/svg/laptop.png";
 import clothShop from "../assets/svg/clothshop.png";
+import circle from "../assets/svg/circle.png";
+import dot from "../assets/svg/dot.png";
 
-import Slider from "react-slick";
-function About() {  
-  var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
-
+function About() {
   return (
     <div>
       <div className="w-[100%] bg-[#2B77C5] px-[10px] py-[20px] text-[white]">
@@ -142,96 +133,28 @@ function About() {
 
       {/* About 4th Part Slider  */}
 
-    <div className="bg-yellow-100 mx-[20px] my-[100px]"> 
-    <Slider {...settings}>
-      <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
-    </div>
-
-
-      {/* <div className="relative">
-     <div>
-     <button
-            className="bg-black carousel-control-prev  flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon inline-block bg-no-repeat"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="bg-black carousel-control-next  flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon inline-block bg-no-repeat"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-     </div>
-        <div
-          id="carouselExampleControls"
-          className="carousel slide relative"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner relative w-full overflow-hidden">
-            <div className="carousel-item active relative float-left w-full">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-                className="block w-full"
-                alt="Wild Landscape"
-              />
-            </div>
-            <div className="carousel-item relative float-left w-full">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-                className="block w-full"
-                alt="Camera"
-              />
-            </div>
-            <div className="carousel-item relative float-left w-full">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-                className="block w-full"
-                alt="Exotic Fruits"
-              />
-            </div>
-          </div>
-         
-        </div>
-      </div> */}
-
       {/* aboute 6th part  */}
 
-      {/* <div>
-            <div>
-                <img src={clothShop} alt="" />
+      <div className=" lg:pl-[20px] mb-[50px] mt-[100px]">
+        <div className="md:flex">
+          <img src={clothShop} alt="" className="md:h-[400px] lg:h-[500px] sm:h-[400px] my-[0] mx-auto" />
+          <div className="bg-[#87aedf] sm:justify-center w-[100%] lg:h-[300px] md:mt-[150px] lg:mt-[200px] lg:p-[20px] sm:flex md:justify-center">
+           <div className="flex justify-center sm:justify-between items-center bg-slate-400 sm:w-[480px]  md:pt-[30px] h-[220px] md:w-[400px] lg:w-[480px] ">
+           <div className="relative mt-[-80px]">
+              <img src={circle} alt="" className="h-[50px]  sm:h-[50px] md:h-[50px] lg:h-[60px] md:mr-[40px] md:mt-[10px]" />
+              <img src={dot} alt="" className="absolute top-[10px] left-[10px] sm:top-[18px] sm:left-[15px] md:top-[25px] md:left-[15px] lg:top-[32px] lg:left-[22px]" />
             </div>
-        </div> */}
+            <div className="w-[300px] sm:w-[400px] md:w-[350px] lg:w-[400px] md:my-[40px] md:mx-auto">
+              <h1 className="text-white lg:font-bold md:text-[20px] lg:text-[30px] sm:text-[20px] mb-[10px]">LET’S START SOMETHING BIG TOGETHER</h1>
+              <div className="md:flex md:justify-between text-white">
+                <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" className="w-[180px] lg:w-[260px]" />
+                <button className="border bg-[#2B77C5] text-[15px] md:px-[8px] md:py-[5px] px-[10px] py-[8px]">SUBSCRIBE</button>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
