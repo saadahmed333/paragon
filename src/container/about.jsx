@@ -138,16 +138,16 @@ function About() {
       <div className=" lg:pl-[20px] mb-[50px] mt-[100px]">
         <div className="md:flex">
           <img src={clothShop} alt="" className="md:h-[400px] lg:h-[500px] sm:h-[400px] my-[0] mx-auto" />
-          <div className="bg-[#87aedf] sm:justify-center w-[100%] lg:h-[300px] md:mt-[150px] lg:mt-[200px] lg:p-[20px] sm:flex md:justify-center">
-           <div className="flex justify-center sm:justify-between items-center bg-slate-400 sm:w-[480px]  md:pt-[30px] h-[220px] md:w-[400px] lg:w-[480px] ">
-           <div className="relative mt-[-80px]">
-              <img src={circle} alt="" className="h-[50px]  sm:h-[50px] md:h-[50px] lg:h-[60px] md:mr-[40px] md:mt-[10px]" />
-              <img src={dot} alt="" className="absolute top-[10px] left-[10px] sm:top-[18px] sm:left-[15px] md:top-[25px] md:left-[15px] lg:top-[32px] lg:left-[22px]" />
+          <div className="bg-[#87aedf] flex justify-center w-[100%] lg:h-[300px] md:mt-[150px] lg:mt-[200px] lg:p-[20px] sm:flex md:justify-center">
+           <div className="flex justify-between sm:justify-between items-center w-[400px] sm:w-[480px]  md:pt-[30px] h-[220px] md:w-[400px] lg:w-[480px] ">
+           <div className="relative mt-[-80px] ml-[10px] sm:mt-[0px]">
+              <img src={circle} alt="" className="h-[50px] sm:h-[50px] md:h-[50px] lg:h-[60px] md:mr-[40px] md:mt-[10px]" />
+              <img src={dot} alt="" className="absolute top-[15px] left-[15px] sm:top-[18px] sm:left-[15px] md:top-[25px] md:left-[15px] lg:top-[32px] lg:left-[22px]" />
             </div>
             <div className="w-[300px] sm:w-[400px] md:w-[350px] lg:w-[400px] md:my-[40px] md:mx-auto">
               <h1 className="text-white lg:font-bold md:text-[20px] lg:text-[30px] sm:text-[20px] mb-[10px]">LET’S START SOMETHING BIG TOGETHER</h1>
               <div className="md:flex md:justify-between text-white">
-                <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" className="w-[180px] lg:w-[260px]" />
+                <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" className="h-[30px] w-[150px] sm:w-[180px] lg:w-[260px]" />
                 <button className="border bg-[#2B77C5] text-[15px] md:px-[8px] md:py-[5px] px-[10px] py-[8px]">SUBSCRIBE</button>
               </div>
             </div>
