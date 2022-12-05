@@ -1,4 +1,5 @@
 import "../css/about.css";
+import aboutBackground from "../assets/about/aboutBackground.jpg"
 import stiches from "../assets/svg/stiches.png";
 import personal from "../assets/svg/personal.png";
 import custom from "../assets/svg/custom.png";
@@ -8,22 +9,18 @@ import laptop from "../assets/svg/laptop.png";
 import clothShop from "../assets/svg/clothshop.png";
 import circle from "../assets/svg/circle.png";
 import dot from "../assets/svg/dot.png";
+import {Footer} from "../components/footer";
+import {Backgroundimage} from "../components/backgroundimage";
 
 function About() {
   return (
     <div>
+
       <div className="w-[100%] bg-[#2B77C5] px-[10px] py-[20px] text-[white]">
         <h1>Header</h1>
       </div>
-      {/* background Image  */}
-      <div className="About-Background h-[400px]">
-        <div className="flex justify-center h-[400px] flex-col items-center text-white">
-          <h1 className="text-[35px] mb-[10px] font-bold ">ABOUT US</h1>
-          <span className="w-[290px] text-[15px] text-center">
-            imply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's
-          </span>
-        </div>
+      <div>
+        <Backgroundimage title="About Us" backgroundimage={aboutBackground}/>
       </div>
 
       {/* About Boxes */}
@@ -135,26 +132,36 @@ function About() {
 
       {/* aboute 6th part  */}
 
-      <div className=" lg:pl-[20px] mb-[50px] mt-[100px]">
+      <div className=" lg:pl-[20px] mb-[50px] mt-[50px]">
         <div className="md:flex">
           <img src={clothShop} alt="" className="md:h-[400px] lg:h-[500px] sm:h-[400px] my-[0] mx-auto" />
           <div className="bg-[#87aedf] flex justify-center w-[100%] lg:h-[300px] md:mt-[150px] lg:mt-[200px] lg:p-[20px] sm:flex md:justify-center">
            <div className="flex justify-between sm:justify-between items-center w-[400px] sm:w-[480px]  md:pt-[30px] h-[220px] md:w-[400px] lg:w-[480px] ">
-           <div className="relative mt-[-80px] ml-[10px] sm:mt-[0px]">
-              <img src={circle} alt="" className="h-[50px] sm:h-[50px] md:h-[50px] lg:h-[60px] md:mr-[40px] md:mt-[10px]" />
-              <img src={dot} alt="" className="absolute top-[15px] left-[15px] sm:top-[18px] sm:left-[15px] md:top-[25px] md:left-[15px] lg:top-[32px] lg:left-[22px]" />
+           <div className="relative mt-[-130px] ml-[10px]  sm:mt-[0px]">
+              <img src={circle} alt="" className="h-[40px] sm:h-[50px] md:h-[50px] lg:h-[60px] md:mr-[40px] md:mt-[10px]" />
+              <img src={dot} alt="" className="absolute top-[12px] left-[10px] sm:top-[18px] sm:left-[15px] md:top-[25px] md:left-[15px] lg:top-[32px] lg:left-[22px]" />
             </div>
             <div className="w-[300px] sm:w-[400px] md:w-[350px] lg:w-[400px] md:my-[40px] md:mx-auto">
               <h1 className="text-white lg:font-bold md:text-[20px] lg:text-[30px] sm:text-[20px] mb-[10px]">LET’S START SOMETHING BIG TOGETHER</h1>
               <div className="md:flex md:justify-between text-white">
-                <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" className="h-[30px] w-[150px] sm:w-[180px] lg:w-[260px]" />
-                <button className="border bg-[#2B77C5] text-[15px] md:px-[8px] md:py-[5px] px-[10px] py-[8px]">SUBSCRIBE</button>
+                <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" className="h-[35px] w-[150px] sm:w-[180px] lg:w-[260px]" />
+                <button className="border bg-[#2B77C5] text-[15px] md:px-[8px] py-[5px] sm:py-[5px] md:py-[5px] px-[10px] lg:py-[8px]">SUBSCRIBE</button>
               </div>
             </div>
            </div>
           </div>
         </div>
       </div>
+
+
+
+    <div>
+      <Footer />
+    </div>
+
+
+
+
     </div>
   );
 }

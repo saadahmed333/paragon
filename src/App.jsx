@@ -1,11 +1,14 @@
 import './App.css';
-import 'flowbite';
 import {About} from "./container/about"
+import {Categories} from "./container/categories"
+import {ContactUs} from "./container/contactus"
 function App() {
   return (
     <>
       <div>
-        <About />
+        {/* <About /> */}
+        {/* <Categories /> */}
+        <ContactUs />
       </div>
     </>
   );
