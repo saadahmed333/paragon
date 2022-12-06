@@ -1,5 +1,5 @@
 import "../css/about.css";
-import aboutBackground from "../assets/about/aboutBackground.jpg"
+import contactBackground from "../assets/contactUs/contactUs.png"
 import stiches from "../assets/svg/stiches.png";
 import personal from "../assets/svg/personal.png";
 import custom from "../assets/svg/custom.png";
@@ -9,6 +9,8 @@ import laptop from "../assets/svg/laptop.png";
 import clothShop from "../assets/svg/clothshop.png";
 import circle from "../assets/svg/circle.png";
 import dot from "../assets/svg/dot.png";
+import aboutMap from "../assets/about/aboutMap.png";
+import glass from "../assets/categoury/glass.png";
 import {Footer} from "../components/footer";
 import {Backgroundimage} from "../components/backgroundimage";
 
@@ -20,7 +22,7 @@ function About() {
         <h1>Header</h1>
       </div>
       <div>
-        <Backgroundimage title="About Us" backgroundimage={aboutBackground}/>
+        <Backgroundimage title="About Us" backgroundimage={contactBackground}/>
       </div>
 
       {/* About Boxes */}
@@ -128,30 +130,34 @@ function About() {
         </section>
       </div>
 
-      {/* About 4th Part Slider  */}
 
       {/* aboute 6th part  */}
 
-      <div className=" lg:pl-[20px] mb-[50px] mt-[50px]">
-        <div className="md:flex">
-          <img src={clothShop} alt="" className="md:h-[400px] lg:h-[500px] sm:h-[400px] my-[0] mx-auto" />
-          <div className="bg-[#87aedf] flex justify-center w-[100%] lg:h-[300px] md:mt-[150px] lg:mt-[200px] lg:p-[20px] sm:flex md:justify-center">
-           <div className="flex justify-between sm:justify-between items-center w-[400px] sm:w-[480px]  md:pt-[30px] h-[220px] md:w-[400px] lg:w-[480px] ">
-           <div className="relative mt-[-130px] ml-[10px]  sm:mt-[0px]">
-              <img src={circle} alt="" className="h-[40px] sm:h-[50px] md:h-[50px] lg:h-[60px] md:mr-[40px] md:mt-[10px]" />
-              <img src={dot} alt="" className="absolute top-[12px] left-[10px] sm:top-[18px] sm:left-[15px] md:top-[25px] md:left-[15px] lg:top-[32px] lg:left-[22px]" />
-            </div>
-            <div className="w-[300px] sm:w-[400px] md:w-[350px] lg:w-[400px] md:my-[40px] md:mx-auto">
-              <h1 className="text-white lg:font-bold md:text-[20px] lg:text-[30px] sm:text-[20px] mb-[10px]">LET’S START SOMETHING BIG TOGETHER</h1>
-              <div className="md:flex md:justify-between text-white">
-                <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" className="h-[35px] w-[150px] sm:w-[180px] lg:w-[260px]" />
-                <button className="border bg-[#2B77C5] text-[15px] md:px-[8px] py-[5px] sm:py-[5px] md:py-[5px] px-[10px] lg:py-[8px]">SUBSCRIBE</button>
-              </div>
-            </div>
-           </div>
-          </div>
-        </div>
+     
+<div>
+  <div className=" lg:pl-[20px] mb-[50px] mt-[50px]">
+<div className="md:flex">
+  <img src={clothShop} alt="" className="md:h-[400px] lg:h-[500px] sm:h-[400px] my-[0] mx-auto" />
+  <div style={{ backgroundImage: `url(${aboutMap})` }}  className="bg-[#87aedf] flex justify-center w-[100%] lg:h-[300px] md:mt-[150px] lg:mt-[200px] sm:flex md:justify-center">
+   <div style={{ backgroundImage: `url(${glass})` }} className="flex  justify-center items-center w-[100%] sm:h-[250px] md:h-full sm:w-[100%]  md:pt-[30px] h-[230px] md:w-[100%] lg:w-[100%] ">
+   <div className="flex justify-center items-center">
+   <div className="relative mt-[-130px] ml-[10px] hidden sm:block">
+      <img src={circle} alt="" className="h-[40px] sm:h-[50px] md:h-[50px] lg:h-[60px] md:mr-[40px] md:mt-[10px]" />
+      <img src={dot} alt="" className="absolute top-[12px] left-[10px] sm:top-[18px] sm:left-[15px] md:top-[25px] md:left-[15px] lg:top-[32px] lg:left-[22px]" />
+    </div>
+    <div className="w-[300px] pl-[20px] sm:pl-[0px] sm:w-[400px] md:w-[350px] lg:w-[400px] md:my-[40px] md:mx-auto">
+      <h1 className="text-white lg:font-bold md:text-[20px] lg:text-[30px] sm:text-[20px] mb-[10px]">LET’S START SOMETHING BIG TOGETHER</h1>
+      <div className="md:flex md:justify-between text-white">
+        <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" className="h-[35px] w-[150px] sm:w-[180px] lg:w-[260px]" />
+        <button className="border bg-[#2B77C5] text-[15px] md:px-[8px] py-[5px] sm:py-[5px] md:py-[5px] px-[10px] lg:py-[8px]">SUBSCRIBE</button>
       </div>
+    </div>
+   </div>
+   </div>
+  </div>
+</div>
+</div>
+</div>
 
 
 
@@ -159,11 +165,12 @@ function About() {
       <Footer />
     </div>
 
-
-
+      
 
     </div>
   );
 }
 
 export { About };
+
+

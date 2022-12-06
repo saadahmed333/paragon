@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutBackground from "../assets/about/aboutBackground.jpg"
+import cateogaryBackground from "../assets/categoury/catogerybackground.png";
 import { Footer } from '../components/footer'
 import { Backgroundimage } from '../components/backgroundimage'
 import {Category} from "../components/categorycards"
@@ -18,7 +18,7 @@ const Categories = () => {
         <h1>Header</h1>
       </div>
         <div>
-             <Backgroundimage title="EXPLORE CATEGORIES" backgroundimage={aboutBackground} />
+             <Backgroundimage title="EXPLORE CATEGORIES" backgroundimage={cateogaryBackground} />
         </div>
 
         <div className='px-5 py-[80px]'>

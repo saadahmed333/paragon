@@ -1,5 +1,4 @@
 import React from 'react'
-import categorybackground from "../assets/categoury/catogerybackground.png"
 import glass from "../assets/categoury/glass.png"
 
 function Backgroundimage(props) {
