@@ -175,13 +175,13 @@ function About() {
                     <h1 className="text-white lg:font-bold md:text-[20px] lg:text-[30px] sm:text-[20px] mb-[10px]">
                       LET’S START SOMETHING BIG TOGETHER
                     </h1>
-                    <div className="md:flex md:justify-between text-white">
+                    <div className="md:flex md:justify-between">
                       <input
                         type="email"
                         placeholder="ENTER YOUR EMAIL ADDRESS"
                         className="h-[35px] w-[150px] sm:w-[180px] lg:w-[260px]"
                       />
-                      <button className="border bg-[#2B77C5] text-[15px] md:px-[8px] py-[5px] sm:py-[5px] md:py-[5px] px-[10px] lg:py-[8px]">
+                      <button className="border bg-[#2B77C5]  text-white text-[15px] md:px-[8px] py-[5px] sm:py-[5px] md:py-[5px] px-[10px] lg:py-[8px]">
                         SUBSCRIBE
                       </button>
                     </div>

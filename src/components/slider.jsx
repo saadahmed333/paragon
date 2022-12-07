@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 import changanLogo from "../assets/customers/changanlogo.png";
 import governmentLogo from "../assets/customers/governmentlogo.png";
@@ -26,7 +26,6 @@ class PreviousNextMethods extends Component {
   }
   render() {
     var settings = {
-      dots: true,
       infinite: false,
       speed: 400,
       slidesToShow: 4,
@@ -39,7 +38,6 @@ class PreviousNextMethods extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true,
           },
         },
         {
@@ -69,10 +67,10 @@ class PreviousNextMethods extends Component {
     };
     return (
         <>
-        <div className="sm:px-[100px] px-[50px]  pt-[50px]">
+        <div className="sm:px-[100px] px-[50px] pt-[100px]">
             <h1 className="text-[25px] sm:text-[30px] font-bold">OUR <span className="text-[#2B77C5]">CUSTOMERS</span></h1>
         </div>
-         <div className="py-[50px] sm:px-[100px] px-[50px] flex justify-end">
+         <div className="pt-[30px] pb-[30px] sm:px-[100px] px-[50px] flex justify-end">
           <div className="w-[80px] flex justify-evenly">
             <button
               className="button border bg-white p-[6px]"
@@ -88,7 +86,7 @@ class PreviousNextMethods extends Component {
             </button>
           </div>
         </div>
-      <div className="px-[80px] overflow-x-hidden overflow-y-hidden object-contain">
+      <div className="px-[80px] pb-[50px] overflow-x-hidden overflow-y-hidden object-contain">
         <Slider ref={(c) => (this.slider = c)} {...settings}>
           <div className="mr-[40px] h-[250px] !flex items-center">
             <img src={changanLogo} style={{minWidth: "120px", minHeight: "180px"}} alt="" />
@@ -177,9 +175,19 @@ class Clientslider extends Component {
       return (
           <>
           <div className="sm:px-[100px] px-[50px]  pt-[50px]">
-              <h1 className="text-[25px] sm:text-[30px] font-bold">OUR <span className="text-[#2B77C5]">CUSTOMERS</span></h1>
+            <div className="bg-[#E0B953] w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]  flex justify-center items-center">
+            <FontAwesomeIcon icon={faQuoteLeft} className="text-[30px] sm:text-[40px] text-white" />
+            </div>
+            <div className="ml-[60px] sm:ml-[70px] mt-[-30px]">
+                <span className="font-bold text-[16px] sm:text-[20px]">WHAT OUR CLIENTS</span>
+                <br />
+                <span className="text-[#4B53F8] text-[16px] sm:text-[20px] font-bold"> ARE SAYING </span>
+            </div>
+            <div>
+
+            </div>
           </div>
-           <div className="py-[50px] sm:px-[100px] px-[50px] flex justify-end">
+           <div className="pt-[30px] pb-[50px] sm:px-[100px] px-[50px] flex justify-end">
             <div className="w-[80px] flex justify-evenly">
               <button
                 className="button border bg-white p-[6px]"
