@@ -8,11 +8,11 @@ function App() {
   return (
     <>
       <div>
-        {/* <About /> */}
+        <About />
         {/* <Categories /> */}
         {/* <ContactUs /> */}
         {/* <Customers /> */}
-        <Service />
+        {/* <Service /> */}
       </div>
     </>
   );

@@ -7,8 +7,10 @@ module.exports = {
   theme: {
     extend: {},
   },
+  variants: {},
   plugins: [
     require('tw-elements/dist/plugin'),
     require('flowbite/plugin')
   ],
+
 }

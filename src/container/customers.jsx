@@ -2,9 +2,9 @@ import React from "react";
 import { Footer } from "../components/footer";
 import { Backgroundimage } from "../components/backgroundimage";
 import cateogaryBackground from "../assets/categoury/catogerybackground.png";
+import {PreviousNextMethods} from "../components/slider";
 // import ReactDOM from "react-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import sports from "../assets/categoury/sports.png";
 // import tray from "../assets/categoury/tray.png";
 // import worker from "../assets/categoury/worker.png";
@@ -20,7 +20,7 @@ function Customers(props) {
           backgroundimage={cateogaryBackground}
         />
       </div>
-
+        <PreviousNextMethods />
       <div>
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
