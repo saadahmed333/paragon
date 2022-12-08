@@ -4,11 +4,13 @@ import {Categories} from "./container/categories"
 import {ContactUs} from "./container/contactus"
 import {Customers} from "./container/customers"
 import {Service} from "./container/service"
+import Home from './container';
 function App() {
   return (
     <>
       <div>
-        <About />
+        <Home />
+        {/* <About /> */}
         {/* <Categories /> */}
         {/* <ContactUs /> */}
         {/* <Customers /> */}
