@@ -12,6 +12,11 @@ import navyLogo from "../assets/customers/navylogo.png";
 
 import profile from "../assets/about/aboutsliderprofile.png";
 
+
+// import slider1 from "../assets/about/slider1.png"
+import slider2 from "../assets/about/slider2.png"
+import slider3 from "../assets/about/slider3.png"
+
 class PreviousNextMethods extends Component {
   constructor(props) {
     super(props);
@@ -286,3 +291,160 @@ class Clientslider extends Component {
 
 
   export {Clientslider}
+
+
+
+
+
+  class Memberslider extends Component {
+    constructor(props) {
+      super(props);
+      this.next = this.next.bind(this);
+      this.previous = this.previous.bind(this);
+    }
+    next() {
+      this.slider.slickNext();
+    }
+    previous() {
+      this.slider.slickPrev();
+    }
+    render() {
+      var settings = {
+        // dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 945,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 862,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 770,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 696,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 596,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      };
+      return (
+        <>
+        <div>
+          <div className="pt-[30px] pb-[50px] sm:px-[50px] px-[50px] flex justify-end">
+            <div className="w-[80px] flex justify-evenly]">
+              <button
+                className="button border bg-white p-[6px] mr-[10px]"
+                onClick={this.previous}
+              >
+                <FontAwesomeIcon icon={faArrowLeft} />
+              </button>
+              <button
+                className="button border bg-white p-[6px]"
+                onClick={this.next}
+              >
+                <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className=" !flex justify-center items-center ">
+
+          <Slider className="w-[330px] md:w-[700px] lg:w-[500px]" ref={(c) => (this.slider = c)} {...settings}>
+            <div className="!flex items-center justify-center">
+              <img src={slider3} className="mr-[10px] h-[220px] sm:h-[220px] md:h-[200px]" alt="" />
+            </div>
+            <div className="!flex items-center justify-center">
+            <img src={slider2} className="mr-[10px] h-[220px] sm:h-[220px] md:h-[200px]" alt="" />
+            </div>
+            <div className="!flex items-center justify-center">
+            <img src={slider3} className="mr-[10px] h-[220px] sm:h-[220px] md:h-[200px]" alt="" />
+            </div>
+            <div className="!flex items-center justify-center">
+              <img src={slider2} className="mr-[10px] h-[220px] sm:h-[220px] md:h-[200px]" alt="" />
+            </div>
+            <div className="!flex items-center justify-center">
+            <img src={slider3} className="mr-[10px] h-[220px] sm:h-[220px] md:h-[200px]" alt="" />
+            </div>
+            <div className="!flex items-center justify-center">
+            <img src={slider2} className="mr-[10px] h-[220px] sm:h-[220px] md:h-[200px]" alt="" />
+            </div>
+          </Slider>
+          </div>
+        </div>
+        </>
+      );
+    }
+  }
+  
+  export {Memberslider}
+

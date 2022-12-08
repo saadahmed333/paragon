@@ -15,6 +15,7 @@ import { Footer } from "../components/footer";
 import { Backgroundimage } from "../components/backgroundimage";
 import { PreviousNextMethods } from "../components/slider";
 import { Clientslider } from "../components/slider";
+import { Memberslider } from "../components/slider";
 function About() {
   return (
     <div>
@@ -111,7 +112,7 @@ function About() {
         <section className="text-gray-600 body-font overflow-hidden ">
           <div className="container px-5 pb-[20px] mx-auto mt-[0px] sm:mt-[100px]">
             <div className="flex items-center flex-wrap  mb-[0px]">
-              <div className="p sm:p-12 pt-[0px] md:w-1/2 flex flex-col items-start">
+              <div className="p pl-[20px] sm:p-12 pt-[0px] md:w-1/2 flex flex-col items-start">
                 <h2 className="sm:text-[20px] text-[18px] font-bold text-black mt-4 mb-4">
                   WELCOME TO <span className="text-[#2B77C5]">PARAGON</span>
                 </h2>
@@ -130,18 +131,32 @@ function About() {
         </section>
       </div>
 
-      {/* about slider 4th part */}
+      {/* Abiut team slider 4th part  */}
+
+      <div className="w-[full] px-[0px] sm:px-[50px] flex flex-wrap justify-center lg:justify-between items-center">
+        <div className="h-[300px] pl-[50px] items-end flex">
+          <div className="flex flex-col">
+            <h1 className="text-[30px] font-bold">OUR TEAM</h1>
+            <h1 className="text-[30px] font-bold text-[#2B77C5] ">MEMBERS</h1>
+            <p className=" lg:w-[300px] mt-[10px]">We have dealt with various kinds of garments, be it school, office or hotel uniforms, labor & security, fashion & casual wear, or any other kind of fabrics. Moreover, we offer embroidery and </p>
+          </div>
+        </div>
+        <div className="md:w-[600px] lg:w-[550px] flex-col w-[600px] sm:w-[600px] ">
+          <Memberslider />
+        </div>
+      </div>
+
+      {/* about slider 5th part */}
       <div>
         <Clientslider />
       </div>
 
-
-      {/* about slider 5th part */}
+      {/* about slider 6th part */}
       <div>
         <PreviousNextMethods />
       </div>
 
-      {/* aboute 6th part  */}
+      {/* aboute 7th part  */}
       <div>
         <div className=" lg:pl-[20px] mb-[50px] mt-[50px]">
           <div className="md:flex">
@@ -193,7 +208,7 @@ function About() {
         </div>
       </div>
 
-      {/* footer start  */}
+      {/* footer 8th part */}
       <div>
         <Footer />
       </div>
