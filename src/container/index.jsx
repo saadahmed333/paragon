@@ -22,7 +22,7 @@ export default function Home(){
         <Pt/>
         <Clientslider />
         <PreviousNextMethods />
-        <Beltcircle />
+        {/* <Beltcircle /> */}
         <div>
         <div className=" lg:pl-[20px] mb-[50px] mt-[50px]">
           <div className="md:flex">
