@@ -16,12 +16,11 @@ import { Backgroundimage } from "../components/backgroundimage";
 import { PreviousNextMethods } from "../components/slider";
 import { Clientslider } from "../components/slider";
 import { Memberslider } from "../components/slider";
+import Navbar from "../components/navbar";
 function About() {
   return (
     <div>
-      <div className="w-[100%] bg-[#2B77C5] px-[10px] py-[20px] text-[white]">
-        <h1>Header</h1>
-      </div>
+      <Navbar />
       <div>
         <Backgroundimage title="About Us" backgroundimage={contactBackground} />
       </div>

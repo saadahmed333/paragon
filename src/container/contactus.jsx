@@ -5,12 +5,11 @@ import pin from "../assets/contactUs/pin.png";
 import paragon from "../assets/contactUs/paragon.png";
 import { Footer } from "../components/footer";
 import { Backgroundimage } from "../components/backgroundimage";
+import Navbar from "../components/navbar";
 const ContactUs = () => {
   return (
     <div>
-      <div className="w-[100%] bg-[#2B77C5] px-[10px] py-[20px] text-[white]">
-        <h1>Header</h1>
-      </div>
+        <Navbar />
       <div>
         <Backgroundimage
           title="CONTACT US"

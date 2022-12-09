@@ -8,13 +8,12 @@ import sublimation from "../assets/services/sublimation.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { Footer } from "../components/footer";
+import Navbar from "../components/navbar.jsx"
 
 const Service = () => {
   return (
     <div>
-      <div className="w-[100%] bg-[#2B77C5] px-[10px] py-[20px] text-[white]">
-        <h1>Header</h1>
-      </div>
+        <Navbar/>
       <div>
         <Backgroundimage
           title="SERVICES & PRICING"

@@ -12,9 +12,11 @@ import dot from "../assets/svg/dot.png";
 import aboutMap from "../assets/about/aboutMap.png";
 import glass from "../assets/categoury/glass.png";
 import Beltcircle from "../components/beltcircle.jsx"
+import Navbar from "../components/navbar.jsx"
 export default function Home(){
     return(
         <>
+        <Navbar />
         <Wwd/>
         <UniAndAcc/>
         <Hww/>

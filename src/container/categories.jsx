@@ -11,12 +11,11 @@ import policeman from "../assets/categoury/policeman.png"
 import sports from "../assets/categoury/sports.png"
 import tray from "../assets/categoury/tray.png"
 import worker from "../assets/categoury/worker.png"
+import Navbar from '../components/navbar';
 const Categories = () => {
   return (
     <div>
-        <div className="w-[100%] bg-[#2B77C5] px-[10px] py-[20px] text-[white]">
-        <h1>Header</h1>
-      </div>
+        <Navbar/>
         <div>
              <Backgroundimage title="EXPLORE CATEGORIES" backgroundimage={cateogaryBackground} />
         </div>

@@ -3,6 +3,7 @@ import { Footer } from "../components/footer";
 import { Backgroundimage } from "../components/backgroundimage";
 import cateogaryBackground from "../assets/categoury/catogerybackground.png";
 import {PreviousNextMethods} from "../components/slider";
+import Navbar from "../components/navbar";
 // import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import sports from "../assets/categoury/sports.png";
@@ -11,9 +12,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Customers(props) {
   return (
     <div>
-      <div className="w-[100%] bg-[#2B77C5] px-[10px] py-[20px] text-[white]">
-        <h1>Header</h1>
-      </div>
+        <Navbar/>
       <div>
         <Backgroundimage
           title="OUR CUSTOMERS"
