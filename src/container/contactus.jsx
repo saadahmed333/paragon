@@ -18,14 +18,13 @@ const ContactUs = () => {
       </div>
 
       <div style={{ backgroundImage: `url(${contactMap})` }} className="flex justify-center items-center h-[300px]" >
-        <span className="p-[10px] mt-[40px] bg-white"><img src={paragon} alt="" className="h-[10px]" /></span>
-        <span><img src={pin} alt="" className="h-[100px]" /></span>
+        <span  className="p-[10px] mt-[40px] bg-white"><img  src={paragon} alt="" className="h-[10px]" /></span>
+        <span><img  data-aos="zoom-in" src={pin} alt="" className="h-[100px]" /></span>
       </div>
 
-      <div>
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div data-aos="fade-up-right" className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">OUR <span className="text-[#2B77C5]">ADDRESS</span>
               </h1>
               <div className="mb-[10px]">
@@ -41,7 +40,7 @@ const ContactUs = () => {
                 <span className="text-[12px]">info@paragon-uae.com</span>
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div data-aos="fade-up-right" className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <span className="text-[15px]">Please use the form below to send us any questions or comments regarding our site and products.</span>
               <div className="flex flex-col justify-between h-[300px] mt-[10px]">
                 <input type="text" placeholder="YOUR NAME" className="h-[30px] text-[15px]" />
@@ -54,10 +53,9 @@ const ContactUs = () => {
             </div>
           </div>
         </section>
-      </div>
 
       <div>
-        <section className="text-gray-600 body-font mb-[100px]">
+        <section data-aos="fade-up-right" className="text-gray-600 body-font mb-[100px]">
           <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font sm:text-[30px] text-3xl mb-4 font-semibold text-gray-900">CONTACT <span className="text-[#2B77C5]">DETAILS</span>
