@@ -20,7 +20,7 @@ const Categories = () => {
              <Backgroundimage title="EXPLORE CATEGORIES" backgroundimage={cateogaryBackground} />
         </div>
 
-        <div className='px-5 py-[80px]'>
+        <div data-aos="fade-right" className='px-5 py-[80px]'>
             <div className='text-[30px] font-bold px-4 pb-[50px]'>
                 <h1>EXPLORE BY</h1>
                 <h1 className='text-[#2B77C5]'>CATEGORY</h1>

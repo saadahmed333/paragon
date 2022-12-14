@@ -26,7 +26,7 @@ function About() {
       </div>
 
       {/* About Boxes */}
-      <div className="py-[70px]">
+      <div data-aos="zoom-in" className="py-[70px]">
         <div className="flex justify-center flex-wrap">
           <div className="w-[300px] flex mb-[35px] mr-[20px]">
             <img
@@ -74,7 +74,11 @@ function About() {
       </div>
 
       <div className=" lg:flex lg:justify-center  md:flex md:justify-between mb-[70px] lg:h-[250px] md:h-[240px]">
-        <div className="p-[20px] bg-[#ecebfa] h-[200px] lg:w-[50%] flex justify-center items-center  md:w-[50%] md:h-[250px] lg:flex md:flex  sm:p-[30px] sm:w-[100%]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="p-[20px] bg-[#ecebfa] h-[200px] lg:w-[50%] flex justify-center items-center  md:w-[50%] md:h-[250px] lg:flex md:flex  sm:p-[30px] sm:w-[100%]"
+        >
           <div className=" w-[300px] lg:w-[300px] md:w-[300px] md:ml-[50px] lg:ml-[20px]  h-[150px]">
             <h1 className="text-[25px] text-center font-bold lg:mb-[10px]">
               WHO WE <span className="text-[#2B77C5]">ARE ?</span>
@@ -91,7 +95,12 @@ function About() {
             </div>
           </div>
         </div>
-        <div className=" bg-[#2B77C5] flex justify-center sm:p-[10px] h-[200px]  md:h-[250px] lg:flex lg:justify-center  lg:w-[50%] md:w-[50%] relative ">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className=" bg-[#2B77C5] flex justify-center sm:p-[10px] h-[200px]  md:h-[250px] lg:flex lg:justify-center  lg:w-[50%] md:w-[50%] relative "
+        >
           <img
             src={tailor1}
             alt=""
@@ -111,7 +120,12 @@ function About() {
         <section className="text-gray-600 body-font overflow-hidden ">
           <div className="container px-5 pb-[20px] mx-auto mt-[0px] sm:mt-[100px]">
             <div className="flex items-center flex-wrap  mb-[0px]">
-              <div className="p pl-[20px] sm:p-12 pt-[0px] md:w-1/2 flex flex-col items-start">
+              <div
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                className="p pl-[20px] sm:p-12 pt-[0px] md:w-1/2 flex flex-col items-start"
+              >
                 <h2 className="sm:text-[20px] text-[18px] font-bold text-black mt-4 mb-4">
                   WELCOME TO <span className="text-[#2B77C5]">PARAGON</span>
                 </h2>
@@ -123,24 +137,44 @@ function About() {
                 </p>
               </div>
               <div className=" xl:mt-[50px] md:w-1/2 flex flex-col items-start">
-                <img src={laptop} alt="" className="mt-[10px]" />
+                <img
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                  src={laptop}
+                  alt=""
+                  className="mt-[10px]"
+                />
               </div>
             </div>
           </div>
         </section>
       </div>
 
-      {/* Abiut team slider 4th part  */}
+      {/* About team slider 4th part  */}
 
       <div className="w-[full] px-[0px] sm:px-[50px] flex flex-wrap justify-center lg:justify-between items-center">
-        <div className="h-[300px] pl-[50px] items-end flex">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="h-[300px] pl-[50px] items-end flex"
+        >
           <div className="flex flex-col">
             <h1 className="text-[30px] font-bold">OUR TEAM</h1>
             <h1 className="text-[30px] font-bold text-[#2B77C5] ">MEMBERS</h1>
-            <p className=" lg:w-[300px] mt-[10px]">We have dealt with various kinds of garments, be it school, office or hotel uniforms, labor & security, fashion & casual wear, or any other kind of fabrics. Moreover, we offer embroidery and </p>
+            <p className=" lg:w-[300px] mt-[10px]">
+              We have dealt with various kinds of garments, be it school, office
+              or hotel uniforms, labor & security, fashion & casual wear, or any
+              other kind of fabrics. Moreover, we offer embroidery and{" "}
+            </p>
           </div>
         </div>
-        <div className="md:w-[600px] lg:w-[550px] flex-col w-[600px] sm:w-[600px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          className="md:w-[600px] lg:w-[550px] flex-col w-[600px] sm:w-[600px] "
+        >
           <Memberslider />
         </div>
       </div>
@@ -160,11 +194,15 @@ function About() {
         <div className=" lg:pl-[20px] mb-[50px] mt-[50px]">
           <div className="md:flex">
             <img
+              data-aos="zoom-out-right"
               src={clothShop}
               alt=""
               className="md:h-[400px] lg:h-[500px] sm:h-[400px] my-[0] mx-auto"
             />
             <div
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
               style={{ backgroundImage: `url(${aboutMap})` }}
               className="bg-[#87aedf] flex justify-center w-[100%] lg:h-[300px] md:mt-[150px] lg:mt-[200px] sm:flex md:justify-center"
             >

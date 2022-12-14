@@ -11,7 +11,6 @@ import circle from "../assets/svg/circle.png";
 import dot from "../assets/svg/dot.png";
 import aboutMap from "../assets/about/aboutMap.png";
 import glass from "../assets/categoury/glass.png";
-import Beltcircle from "../components/beltcircle.jsx"
 import Navbar from "../components/navbar.jsx"
 export default function Home(){
     return(
@@ -29,11 +28,16 @@ export default function Home(){
         <div className=" lg:pl-[20px] mb-[50px] mt-[50px]">
           <div className="md:flex">
             <img
+            data-aos="zoom-out-right"
               src={clothShop}
               alt=""
               className="md:h-[400px] lg:h-[500px] sm:h-[400px] my-[0] mx-auto"
             />
             <div
+            
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
               style={{ backgroundImage: `url(${aboutMap})` }}
               className="bg-[#87aedf] flex justify-center w-[100%] lg:h-[300px] md:mt-[150px] lg:mt-[200px] sm:flex md:justify-center"
             >

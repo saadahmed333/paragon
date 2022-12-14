@@ -17,7 +17,7 @@ const ContactUs = () => {
         />
       </div>
 
-      <div style={{ backgroundImage: `url(${contactMap})` }} className="flex justify-center items-center h-[300px]" >
+      <div  style={{ backgroundImage: `url(${contactMap})` }} className="flex justify-center items-center h-[300px]" >
         <span  className="p-[10px] mt-[40px] bg-white"><img  src={paragon} alt="" className="h-[10px]" /></span>
         <span><img  data-aos="zoom-in" src={pin} alt="" className="h-[100px]" /></span>
       </div>
